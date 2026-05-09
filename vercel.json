@@ -1,5 +1,5 @@
 {
   "rewrites": [
-    { "source": "/", "destination": "/Nebulamindai.jsx" }
+    { "source": "/", "destination": "/index.html" }
   ]
 }

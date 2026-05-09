@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NebulaMind AI — Next Generation Intelligence Platform</title>
+<link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+  <!-- Custom Cursor Elements -->
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+
+  <!-- Ambient Backgrounds -->
+  <div class="noise"></div>
+  <div class="aurora"></div>
+  <canvas id="particles"></canvas>
+
+  <!-- Navigation -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#" class="logo gradient-text">NebulaMind</a>
+      <ul class="nav-links">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#demo">Demo</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+      <a href="#pricing" class="magnetic-btn" style="padding: 10px 24px; font-size: 14px;">Get Started</a>
+      <button class="mobile-menu-btn" aria-label="Menu">☰</button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-badge reveal">
+        <span>⚡</span>
+        <span>Powered by Next-Gen AI Architecture</span>
+      </div>
+      <h1 class="reveal">
+        Intelligence That <br>
+        <span class="gradient-text">Transcends Boundaries</span>
+      </h1>
+      <p class="reveal">
+        Harness the power of artificial intelligence to transform your workflow, 
+        automate complex tasks, and unlock insights you never knew existed.
+      </p>
+      <div class="hero-buttons reveal">
+        <a href="#pricing" class="magnetic-btn">Start Free Trial</a>
+        <a href="#demo" class="magnetic-btn magnetic-btn-outline">View Demo</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2>Everything You Need to <span class="gradient-text">Scale</span></h2>
+        <p>Powerful features designed for modern teams who demand excellence and precision.</p>
+      </div>
+      <div class="features-grid">
+        <article class="feature-card glass reveal">
+          <div class="feature-icon">🧠</div>
+          <h3>Neural Engine</h3>
+          <p>Advanced machine learning algorithms that adapt to your data patterns and continuously improve accuracy over time without manual retraining.</p>
+        </article>
+        <article class="feature-card glass reveal reveal-delay-1">
+          <div class="feature-icon">⚡</div>
+          <h3>Real-time Processing</h3>
+          <p>Process millions of data points in milliseconds with our globally distributed computing infrastructure and edge caching.</p>
+        </article>
+        <article class="feature-card glass reveal reveal-delay-2">
+          <div class="feature-icon">🔒</div>
+          <h3>Enterprise Security</h3>
+          <p>Bank-grade AES-256 encryption, SOC 2 Type II compliance, and granular RBAC access controls keep your proprietary data protected.</p>
+        </article>
+        <article class="feature-card glass reveal">
+          <div class="feature-icon">🔌</div>
+          <h3>Seamless Integration</h3>
+          <p>Connect with 200+ tools and platforms through our extensive REST API, webhooks, and native SDK ecosystem.</p>
+        </article>
+        <article class="feature-card glass reveal reveal-delay-1">
+          <div class="feature-icon">📊</div>
+          <h3>Advanced Analytics</h3>
+          <p>Visualize complex datasets with interactive dashboards, automated insight generation, and predictive forecasting models.</p>
+        </article>
+        <article class="feature-card glass reveal reveal-delay-2">
+          <div class="feature-icon">🤖</div>
+          <h3>Auto-ML Pipeline</h3>
+          <p>Build, train, and deploy custom models without writing code. Our pipeline handles feature engineering and hyperparameter tuning.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Product Demo Section -->
+  <section id="demo">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2>See It In <span class="gradient-text">Action</span></h2>
+        <p>Experience the power of NebulaMind through our live performance metrics.</p>
+      </div>
+      <div class="glass reveal" style="padding: 40px; border-radius: var(--radius-lg);">
+        <div class="demo-grid">
+          <div class="demo-stat">
+            <div class="demo-stat-value gradient-text">2.4M+</div>
+            <div class="demo-stat-label">Predictions / Day</div>
+          </div>
+          <div class="demo-stat">
+            <div class="demo-stat-value gradient-text">99.99%</div>
+            <div class="demo-stat-label">Uptime SLA</div>
+          </div>
+          <div class="demo-stat">
+            <div class="demo-stat-value gradient-text">50ms</div>
+            <div class="demo-stat-label">Avg. Latency</div>
+          </div>
+          <div class="demo-stat">
+            <div class="demo-stat-value gradient-text">500+</div>
+            <div class="demo-stat-label">Enterprise Clients</div>
+          </div>
+        </div>
+        <div class="demo-preview">
+          <div style="font-size: 52px; margin-bottom: 16px; opacity: 0.8;">📊</div>
+          <p style="color: var(--color-text-muted); font-size: 18px; font-weight: 500;">Interactive Dashboard Preview</p>
+          <p style="font-size: 14px; color: #555; margin-top: 8px;">Live data visualization and model monitoring interface</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section id="pricing">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2>Simple, <span class="gradient-text">Transparent</span> Pricing</h2>
+        <p>Choose the plan that fits your needs. No hidden fees, cancel anytime.</p>
+      </div>
+      <div class="pricing-grid">
+        <article class="pricing-card glass reveal">
+          <h3>Starter</h3>
+          <p>For individuals and small projects</p>
+          <div class="price">$29<span>/month</span></div>
+          <ul class="pricing-features">
+            <li>5,000 API calls/month</li>
+            <li>Basic analytics dashboard</li>
+            <li>Email support (48h)</li>
+            <li>2 team members</li>
+            <li>Standard pre-trained models</li>
+          </ul>
+          <a href="#" class="magnetic-btn magnetic-btn-outline" style="width: 100%;">Get Started</a>
+        </article>
+
+        <article class="pricing-card glass popular reveal reveal-delay-1">
+          <div class="popular-badge">Most Popular</div>
+          <h3>Professional</h3>
+          <p>For growing teams and businesses</p>
+          <div class="price gradient-text">$99<span>/month</span></div>
+          <ul class="pricing-features">
+            <li>50,000 API calls/month</li>
+            <li>Advanced analytics & reports</li>
+            <li>Priority support (4h)</li>
+            <li>10 team members</li>
+            <li>Custom model training</li>
+            <li>99.9% SLA guarantee</li>
+          </ul>
+          <a href="#" class="magnetic-btn" style="width: 100%;">Get Started</a>
+        </article>
+
+        <article class="pricing-card glass reveal reveal-delay-2">
+          <h3>Enterprise</h3>
+          <p>For large-scale organizations</p>
+          <div class="price">Custom</div>
+          <ul class="pricing-features">
+            <li>Unlimited API calls</li>
+            <li>Dedicated cloud infrastructure</li>
+            <li>24/7 phone & Slack support</li>
+            <li>Unlimited team members</li>
+            <li>On-premise deployment option</li>
+            <li>Custom SLA & compliance</li>
+          </ul>
+          <a href="#" class="magnetic-btn magnetic-btn-outline" style="width: 100%;">Contact Sales</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2>Loved by <span class="gradient-text">Teams</span> Worldwide</h2>
+        <p>See what industry leaders say about NebulaMind.</p>
+      </div>
+      <div class="testimonials-grid">
+        <article class="testimonial-card glass reveal">
+          <div class="stars">★★★★★</div>
+          <p>"NebulaMind transformed how we handle data analysis. What used to take our team weeks now happens in minutes. The prediction accuracy is simply unmatched in the industry."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">SK</div>
+            <div class="author-info">
+              <h4>Sarah Kim</h4>
+              <span>CTO at TechVision</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="testimonial-card glass reveal reveal-delay-1">
+          <div class="stars">★★★★★</div>
+          <p>"The integration was seamless and the developer experience is incredible. We've measured a 340% ROI in just the first quarter of deploying NebulaMind enterprise-wide."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">MR</div>
+            <div class="author-info">
+              <h4>Marcus Rodriguez</h4>
+              <span>Head of AI at DataFlow</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="testimonial-card glass reveal reveal-delay-2">
+          <div class="stars">★★★★★</div>
+          <p>"Finally, an AI platform that truly understands enterprise needs. Security, scalability, and performance—all packaged in one beautifully designed developer experience."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">EJ</div>
+            <div class="author-info">
+              <h4>Elena Johnson</h4>
+              <span>VP Engineering at CloudScale</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section id="faq">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2>Frequently Asked <span class="gradient-text">Questions</span></h2>
+        <p>Everything you need to know about getting started with NebulaMind.</p>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item glass reveal">
+          <button class="faq-question" aria-expanded="false">
+            How does the 14-day free trial work?
+            <span class="faq-icon"></span>
+          </button>
+          <div class="faq-answer">
+            Start with full access to all Professional tier features for 14 days. No credit card is required to sign up. Cancel anytime before the trial ends and you won't be charged a single penny.
+          </div>
+        </div>
+
+        <div class="faq-item glass reveal reveal-delay-1">
+          <button class="faq-question" aria-expanded="false">
+            Can I integrate with my existing tech stack?
+            <span class="faq-icon"></span>
+          </button>
+          <div class="faq-answer">
+            Absolutely. NebulaMind integrates with over 200 popular tools including Slack, Salesforce, HubSpot, Zapier, and all major cloud providers. Our REST API is fully documented with OpenAPI specs and SDKs for Python, Node.js, Go, and Ruby.
+          </div>
+        </div>
+
+        <div class="faq-item glass reveal reveal-delay-2">
+          <button class="faq-question" aria-expanded="false">
+            How secure is my proprietary data?
+            <span class="faq-icon"></span>
+          </button>
+          <div class="faq-answer">
+            Security is our foundation. We use AES-256 encryption at rest and TLS 1.3 in transit. We're SOC 2 Type II certified, GDPR compliant, HIPAA ready, and we never train our models on your proprietary data without explicit consent.
+          </div>
+        </div>
+
+        <div class="faq-item glass reveal reveal-delay-3">
+          <button class="faq-question" aria-expanded="false">
+            Do you offer custom model training?
+            <span class="faq-icon"></span>
+          </button>
+          <div class="faq-answer">
+            Yes. Professional and Enterprise plans include our Auto-ML pipeline for custom model training. Simply upload your datasets, define your objectives, and our system handles feature engineering, training, and deployment automatically.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section>
+    <div class="container">
+      <div class="cta-box glass reveal">
+        <h2>Ready to Experience the <span class="gradient-text">Future?</span></h2>
+        <p>Join thousands of engineering teams already using NebulaMind to power their next breakthrough.</p>
+        <a href="#pricing" class="magnetic-btn glow">Start Your Free Trial</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo gradient-text" style="font-size: 28px;">NebulaMind</div>
+        <p>Next-generation artificial intelligence platform for modern teams. Build smarter, scale faster, and stay ahead of the curve.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Product</h4>
+        <ul>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#">API Documentation</a></li>
+          <li><a href="#">Changelog</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Security</a></li>
+          <li><a href="#">Cookie Settings</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 NebulaMind AI. All rights reserved.</span>
+      <span>Designed with intelligence 🚀</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
